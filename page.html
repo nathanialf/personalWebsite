@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title>Nathanial Fine</title>
+  		<!-- THIS SETS THE NOTIFICATION BAR AND URL BAR COLOR IN LOLLIPOP CHROME-->
+  		<meta name="theme-color" content="#66BB6A">
+  		<!-- Roboto Font-->
+  		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="light.css" />
+	</head>
+  <script type="text/javascript">
+    function clicklink (elid)
+    {
+      if(elid == 'keystone_prime')
+        window.open("http://keystone.indstate.edu","_self");
+      else if(elid == 'keystone_lite')
+        window.open("http://keystone.indstate.edu/lite.php","_self");
+      else if(elid == 'keystone_git')
+        window.open("http://github.com/zomnbio/Keystone","_self");
+      else if(elid == 'speech_prime')
+        window.open("assist.html","_self");
+    }
+  </script>
+	<body>
+		<div id='header'>
+			Nathanial Fine
+		</div>
+		<br>
+		<br>
+		<div class='item'>
+			Programming Experience
+			<div class='subitem'>
+				Keystone&nbsp&nbsp&nbsp&nbsp<span class='linkbutton' id='keystone_prime' onclick='clicklink(this.id)'>Primary Version</span>&nbsp&nbsp&nbsp&nbsp<span class='linkbutton' id='keystone_lite' onclick='clicklink(this.id)'>Lite Version</span>&nbsp&nbsp&nbsp&nbsp<span class='linkbutton' id='keystone_git' onclick='clicklink(this.id)'>Github</span>
+			</div>
+			<div class='subitem'>
+				Speech Recognition (TESTING)&nbsp&nbsp&nbsp&nbsp<span class='linkbutton' id='speech_prime' onclick='clicklink(this.id)'>Primary Version</span>
+			</div>
+		</div>
+
+		<div class='item'>
+			Work Experience
+			<div class='subitem'>
+				Indiana State University - Equipment Repair Service
+				<br>Technical Specialist<br>
+				<em>Jan 2015 - now</em>
+				<ul>
+					<li>Hardware diagnostic, repair and prep on faculty, staff and student computers
+					<li>Studied Comptia Network+ Certification
+					<li>Lead developer for a Parature ticket system web interface replacement, called Keystone, used by Analysts and Consultants for Indiana State University
+				</ul>
+			</div>
+			<div class='subitem'>
+				Indiana State University - Student Computer Support Center
+				<br>Technician<br>
+				<em>Jan 2014 - Dec 2014</em>
+				<ul>
+					<li>Software troubleshooting and repair for Students
+					<li>Started work on Keystone in down time
+				</ul>
+			</div>
+			<div class='subitem'>
+				Metropolitan School District of Lawrence Township
+				<br>Technician Intern<br>
+				<em>June 2013 - Aug 2013</em>
+				<ul>
+					<li>Prepared Student Laptops for incoming middle schoolers
+					<li>Diagnosed and repaired faculty computers
+					<li>Ran ethernet cables from an IDF to new rooms
+				</ul>
+			</div>
+		</div>
+
+		<div class='item'>
+			Certifications
+			<div class='subitem'>
+				Comptia A+ - 2013
+			</div>
+			<div class='subitem'>
+				Dell and Lenovo Hardware Technician - 2015
+			</div>
+			<div class='subitem'>
+				Comptia Network+ - In Progress
+			</div>
+		</div>
+	</body>
+</html>
