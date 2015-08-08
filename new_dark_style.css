@@ -1,0 +1,169 @@
+html,body
+{
+  background-color:#333333
+}
+
+#header
+{
+  color: #333333;
+  background-color: #66BB6A;
+}
+
+#footer
+{
+  color: #333333;
+  background-color: #66BB6A;
+}
+
+.item
+{
+  background-color: #FFFFFF;
+}
+
+.subitem
+{
+}
+
+.link
+{
+  color: #000000;
+  background-color: #DDDDDD;
+
+  -webkit-transition: background-color 200ms, color 200ms;
+  -moz-transition: background-color 200ms, color 200ms;
+  -o-transition: background-color 200ms, color 200ms;
+  -ms-transition: background-color 200ms, color 200ms;
+}
+
+.link:hover
+{
+  color: #FFFFFF;
+  background-color: #66BB6A;
+  box-shadow :0px 2px 5px rgba(0, 0, 0, 0.2);
+
+  -webkit-transition: background-color 200ms, color 200ms;
+  -moz-transition: background-color 200ms, color 200ms;
+  -o-transition: background-color 200ms, color 200ms;
+  -ms-transition: background-color 200ms, color 200ms;
+}
+
+a:link
+{
+  color: #000000;
+}
+
+#info 
+{
+}
+
+#div_start 
+{
+}
+
+#div_start:hover
+{
+}
+
+#headline
+{
+}
+    
+#results 
+{
+  background-color: #666666;
+}
+
+#start_button 
+{
+  background-color:transparent;
+}
+
+#start_button:hover
+{
+}
+    
+.interim 
+{
+  color: gray;
+}
+    
+.final
+{
+  color: black;
+}
+    
+.button 
+{
+  background-color: #FFFFFF;
+}
+   
+.linkbutton 
+{
+  background-color: #FFFFFF;
+}
+    
+.marquee 
+{
+}
+
+#buttons 
+{
+}
+
+#copy 
+{
+}
+
+#copy > div 
+{
+}
+
+a.c1 
+{
+}
+
+#div_language
+{
+}
+
+select
+{
+  background-color: #666666;
+}
+
+.slide
+{
+  background-color: #222222;
+}
+
+.title
+{
+  color:#999999;
+}
+
+.info
+{
+  color:#999999;
+}
+
+.link_card
+{
+  background-color: #222222;
+  color: #66BB6A;
+
+  -webkit-transition: background-color 200ms, color 200ms;
+  -moz-transition: background-color 200ms, color 200ms;
+  -o-transition: background-color 200ms, color 200ms;
+  -ms-transition: background-color 200ms, color 200ms;
+}
+
+.link_card:hover
+{
+  background-color: #66BB6A;
+  color: #000000;
+
+  -webkit-transition: background-color 200ms, color 200ms;
+  -moz-transition: background-color 200ms, color 200ms;
+  -o-transition: background-color 200ms, color 200ms;
+  -ms-transition: background-color 200ms, color 200ms;
+}

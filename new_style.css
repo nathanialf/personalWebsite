@@ -1,7 +1,6 @@
 html,body
 {
   margin: 0;
-  background-color: #E5E5E5;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -10,16 +9,24 @@ html,body
   top: 0;
   width: 100%;
   position: fixed;
+  font-size: 25px;
+  padding: 20px 0px 20px 0px;
+  box-shadow :0px 2px 5px rgba(1, 1, 1, 0.5);
+  text-align: center;
+}
+
+#footer
+{
+  bottom: 0;
+  width: 100%;
+  position: fixed;
   font-size: 20px;
-  padding: 12px;
-  color: #FFFFFF;
-  background-color: #66BB6A;
+  padding: 20px 0px 20px 0px;
   box-shadow :0px 2px 5px rgba(1, 1, 1, 0.5);
 }
 
 .item
 {
-  background-color: #FFFFFF;
   border-radius: 2px;
   font-size: 18px;
   margin: 20px;
@@ -29,14 +36,12 @@ html,body
 
 .subitem
 {
-  font-size: 12px;
-  padding: 7px 0px 10px 0px;
+  font-size: 16px;
+  padding: 14px 0px 14px 0px;
 }
 
 .link
 {
-  color: #000000;
-  background-color: #DDDDDD;
   box-shadow :0px 2px 5px rgba(0, 0, 0, 0);
 
   -webkit-transition: background-color 200ms, box-shadow 200ms, color 200ms;
@@ -51,8 +56,6 @@ html,body
 
 .link:hover
 {
-  color: #FFFFFF;
-  background-color: #66BB6A;
   box-shadow :0px 2px 5px rgba(0, 0, 0, 0.2);
 
   -webkit-transition: background-color 200ms, box-shadow 200ms, color 200ms;
@@ -88,7 +91,6 @@ a:link
     
 #results 
 {
-  background-color: #666666;
   font-size: 14px;
   font-weight: bold;
   border: 0px solid #ddd;
@@ -104,7 +106,6 @@ a:link
 {
   positon: absolute;
   border: 0;
-  background-color:transparent;
   padding: 0;
   width: 100px;
   height: 100px;
@@ -126,7 +127,6 @@ a:link
 .button 
 {
   display: none;
-  background-color: #FFFFFF;
   border-radius: 2px;
   border-style: none;
   padding: 5px;
@@ -135,11 +135,26 @@ a:link
    
 .linkbutton 
 {
-  background-color: #FFFFFF;
   border-radius: 2px;
   border-style: none;
-  padding: 5px;
+  padding: 10px;
+  box-shadow :0px 2px 5px rgba(0, 0, 0, 0);
+  cursor: pointer;
+
+  -webkit-transition: box-shadow 200ms;
+  -moz-transition: box-shadow 200ms;
+  -o-transition: box-shadow 200ms;
+  -ms-transition: box-shadow 200ms;
+}   
+
+.linkbutton:hover
+{
   box-shadow :0px 2px 5px rgba(0, 0, 0, 0.2);
+
+  -webkit-transition: box-shadow 200ms;
+  -moz-transition: box-shadow 200ms;
+  -o-transition: box-shadow 200ms;
+  -ms-transition: box-shadow 200ms;
 }
     
 .marquee 
@@ -178,7 +193,6 @@ a.c1
 
 select
 {
-  background-color: #FFFFFF;
   border-radius: 2px;
   border-style: none;
   padding: 5px;
@@ -190,7 +204,70 @@ select
   right: 50%;
   width: 100px;
   height: 100px;
-  background-color: #66BB6A;
   border-radius: 50%;
   display: inline-block;
+}
+
+span
+{
+  width:50%;
+  text-align: center;
+}
+
+#footer-left
+{
+  left:0%;
+  display: inline-block;
+}
+
+#footer-right
+{
+  float:right;
+  right:0%;
+  display: inline-block;
+}
+
+.slide
+{
+  width:100%;
+  margin-top: 100px;
+  text-align: center;
+  box-shadow :0px 2px 5px rgba(0, 0, 0, .2);
+}
+
+.title
+{
+  font-size:20px;
+  padding:20px;
+}
+
+.info
+{
+  font-size: 18px;
+  padding:15px;
+}
+
+.link_card
+{
+  cursor: pointer;
+  display: inline-block;
+  margin:2%;;
+  padding:1%;
+  border-radius: 2px;
+  box-shadow :0px 2px 5px rgba(0, 0, 0, 0);
+
+  -webkit-transition: box-shadow 200ms;
+  -moz-transition: box-shadow 200ms;
+  -o-transition: box-shadow 200ms;
+  -ms-transition: box-shadow 200ms;
+}
+
+.link_card:hover
+{
+  box-shadow :0px 2px 5px rgba(0, 0, 0, .2);
+
+  -webkit-transition: box-shadow 200ms;
+  -moz-transition: box-shadow 200ms;
+  -o-transition: box-shadow 200ms;
+  -ms-transition: box-shadow 200ms;
 }
