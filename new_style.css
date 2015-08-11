@@ -245,13 +245,21 @@ span
 {
   font-size: 18px;
   padding:15px;
+  width: 70%;
+  margin: 25px 0px 0px 15%;
+}
+
+.extra_info
+{
+  text-align:justify;
+  margin-top:25px;
 }
 
 .link_card
 {
   cursor: pointer;
   display: inline-block;
-  margin:2%;;
+  margin:2%;
   padding:1%;
   border-radius: 2px;
   box-shadow :0px 2px 5px rgba(0, 0, 0, 0);
@@ -270,4 +278,36 @@ span
   -moz-transition: box-shadow 200ms;
   -o-transition: box-shadow 200ms;
   -ms-transition: box-shadow 200ms;
+}
+
+.collapse_link
+{
+  margin-top:5px;
+  font-size:12px;
+  cursor: pointer;
+  padding:.5%;
+  display: inline-block;
+  border-radius: 2px;
+  box-shadow :0px 2px 5px rgba(0, 0, 0, 0);
+
+  -webkit-transition: box-shadow 200ms;
+  -moz-transition: box-shadow 200ms;
+  -o-transition: box-shadow 200ms;
+  -ms-transition: box-shadow 200ms;
+}
+
+.collapse_link:hover
+{
+  box-shadow :0px 2px 5px rgba(0, 0, 0, .2);
+
+  -webkit-transition: box-shadow 200ms;
+  -moz-transition: box-shadow 200ms;
+  -o-transition: box-shadow 200ms;
+  -ms-transition: box-shadow 200ms;
+}
+
+.collapse
+{
+  font-size: 0px;
+  margin-top: -50px;
 }

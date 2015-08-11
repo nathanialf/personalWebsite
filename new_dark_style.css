@@ -146,6 +146,11 @@ select
   color:#999999;
 }
 
+.extra_info
+{
+  color:#999999;
+}
+
 .link_card
 {
   background-color: #222222;
@@ -166,4 +171,31 @@ select
   -moz-transition: background-color 200ms, color 200ms;
   -o-transition: background-color 200ms, color 200ms;
   -ms-transition: background-color 200ms, color 200ms;
+}
+
+.collapse_link
+{
+  background-color: #222222;
+  color: #66BB6A;
+
+  -webkit-transition: background-color 200ms, color 200ms;
+  -moz-transition: background-color 200ms, color 200ms;
+  -o-transition: background-color 200ms, color 200ms;
+  -ms-transition: background-color 200ms, color 200ms;
+}
+
+.collapse_link:hover
+{
+  background-color: #66BB6A;
+  color: #000000;
+
+  -webkit-transition: background-color 200ms, color 200ms;
+  -moz-transition: background-color 200ms, color 200ms;
+  -o-transition: background-color 200ms, color 200ms;
+  -ms-transition: background-color 200ms, color 200ms;
+}
+
+.collapse_link
+{
+  color: #66BB6A;
 }

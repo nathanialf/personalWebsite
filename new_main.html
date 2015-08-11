@@ -8,6 +8,9 @@
 	<link rel="stylesheet" type="text/css" href="new_style.css" />
 	<link rel="stylesheet" type="text/css" href="new_dark_style.css" />
   </head>
+  
+  <script type="text/javascript" src="scripts.js"></script>
+  
   <body>
 	<div id='header'>
       Nathanial Fine
@@ -19,12 +22,27 @@
       </div>
       <div class='info'>
         Lead Developer for a Parature ticket system replacement, called Keystone. It was used by Analysts and Consultants for Indiana State University
+        <br>
+        <div id='keystone_expand' class='collapse_link' onclick="toggle_collapse(this.id);">
+          Show More
+        </div>
+        <div id='keystone_collapse' class='collapse'>
+          <div class='extra_info'>
+            &nbsp;&nbsp;&nbsp;&nbsp;My Supervisors at the time began internally looking for a work around for the horrible ticket tracking system we had in place with Parature, a ticketing system purchased by Microsoft. It was slow and had all of the school's departments options available to everyone to use. It showed too much information to everyone. The most important thing that it slowed for us was out analysts, student workers, had to make four or five different types of tickets using a similar template for each, meaning not much of the options were used so it is unnecessary to clutter their view with it.
+          </div>
+          <div class='extra_info'>
+            &nbsp;&nbsp;&nbsp;&nbsp;I put the most time into the project due to people leaving or changing positions, when we started the work on the project, and because I was bored with my job otherwise. It was because of the changes that I, for all intents and purposes, was the lead developer on the project. I worked on this while being a technician for Indiana State University and got to choose to work on this over the monotonous virus scans, imaging, and replacing of hardware. It allowed me to utilize techniques taught in school as I was learning to further build on what I only thought I knew. It was challenging and sometimes aggrivating and thats why I enjoyed and I am disappointed that I no longer can work on it.
+          </div>
+        </div>
+        <div class='extra_info' style='text-align:center;'>
+          The links for the Computer and the Mobile versions are locked to Indiana State University's Campus Network. Attempting to access while not on their network will not work and requires an ISU Active Directory login. Please look at the source code if you wish to view the final product.
+        </div>
       </div>
       <div class='link_card' onclick='window.open("https://www.github.com/zomnbio/keystone")'>
         Github
       </div>
       <div class='link_card' onclick='window.open("https://keystone.indstate.edu")'>
-        Desktop Version
+        Computer Version
       </div>
       <div class='link_card' onclick='window.open("https://keystone.indstate.edu/lite.php")'>
         Mobile Version
