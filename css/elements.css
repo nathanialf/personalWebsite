@@ -35,7 +35,7 @@ body{
   
 	display: 									flex;
 	align-items: 							center;
-  }
+}
 
 /*UI ELEMENTS*/
 button{
@@ -54,15 +54,27 @@ input{
 
 a{
 	text-decoration: 					none;
-	padding:									5px;
-	border-radius:						4px;
-	color:									#66BB6A;
+	padding:									10px 20px;
+	margin:										none;
+	background-color:					#66BB6A;
+	color:										#232323;
+	display:									inline-block;
+	border-radius:						8px;
+	border:										#232323 2px solid;
+
+	-webkit-transition: 			background-color .15s linear, color .15s linear;
+	-ms-transition: 					background-color .15s linear, color .15s linear;
+	transition:				 				background-color .15s linear, color .15s linear;
 }
 
 a:hover{
-	background-color: 			#66BB6A;
-	color:									#232323;
+	color: 										#66BB6A;
+	background-color:					#232323;
 	text-decoration: 					none;
+
+  -webkit-transition: 			background-color .15s linear, color .15s linear;
+  -ms-transition: 					background-color .15s linear, color .15s linear;
+  transition: 							background-color .15s linear, color .15s linear;
 }
 
 ul{
@@ -92,8 +104,9 @@ table{
 
 .vert {
 	position: 								relative;
-	width: 										40px;
-	padding: 									100% 40px 100% 40px;
+	width: 										60px;
+	padding: 									100% 60px 100% 60px;
+	height: 									100vh;
 	font-size: 								20px;
 	position: 								relative;
 	color: 									#FFF;
@@ -105,7 +118,7 @@ table{
 	position: 								absolute;
 	display: 									block;
 	width: 										100%;
-	height: 									100%;
+	height: 									100vh;
 	top: 											0;
 	left: 										0;
 	z-index: 									-1;
@@ -118,4 +131,26 @@ table{
 
 .row{
 	width:										100%;
+}
+
+.cent-container{
+	text-align: 							center;
+	font-size:								1.2em;
+	width:										100%;
+	position: 								absolute;
+	display: 									table;
+}
+
+.front{
+	display:									table;
+	text-align:center;
+	height:100vh;
+	width:50vw;
+}
+
+.front span{
+	display:table-cell;
+	vertical-align: middle;
+	height:100vh;
+	width:50vw;
 }

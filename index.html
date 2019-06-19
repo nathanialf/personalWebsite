@@ -26,6 +26,7 @@
 
 	<link rel="stylesheet" href="css/elements.css">
 	<link rel="shortcut icon" href="img/NF2016.png" type="image/x-icon" />
+
 </head>
 
 <body class="main">
@@ -33,19 +34,25 @@
 		<div class="vertical-center container-fluid">
 			<div class="row">
 				<div class="col-sm-5">
-					<div class="home_container">
-					<img src="img/NF2016.png" width="50em" onclick="window.open('#/', '_self');" style="cursor:pointer;"><br><br> Nathanial
-					Fine<br> DevOps and Software Developer<br> nathanial.fine@gmail.com
-					<br> (317) 828-6616
-				</div>
+					<div class="home_container hidden-lg hidden-md hidden-sm">
+						<div ng-include src="'pages/front.html'"></div>
+					</div>
+					<div class="cent-container hidden-xs front">
+						<div ng-include src="'pages/front.html'"></div>
+					</div>
 				</div>
 				<div class="col-sm-2 hidden-xs">
-				<div class="home_container">
+					<div class="home_container">
 						<div class="vert"></div>
 					</div>
 				</div>
-				<div id="information" class="col-sm-5" >
-							<div class="home_container" ng-view></div>
+				<div id="information" class="col-sm-5">
+					
+						<div style="text-align:center;margin-top:20px;" ng-include src="'pages/tab.html'">
+						</div>
+						<br>
+					<div class="home_container hidden-lg hidden-md hidden-sm" ng-view></div>
+					<div class="cent-container hidden-xs" ng-view></div>
 				</div>
 			</div>
 		</div>
