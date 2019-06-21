@@ -5,6 +5,7 @@ body{
 
 /*IDS*/
 
+
 /*CLASSES*/
 .home_container{
 	text-align: 							center;
@@ -15,18 +16,33 @@ body{
 }
 
 .job_title{
-	font-size:								14px;
+	font-size:								16px;
 	width:										50%;
 }
 
 .job_info{
 	text-align:								left;
 	color:									lightgray;
-	font-size:								12px;
+	font-size:								14px;
 }
 
 .job_skills{
 	text-align:								center;
+}
+.job_skills td {
+    border: 								solid 1px #343434;
+    border-style: 					solid none;
+	background-color: 			#343434;
+}
+.job_skills td:first-child {
+    border-left-style: 			solid;
+		border-top-left-radius: 4px; 
+    border-bottom-left-radius: 4px;
+}
+.job_skills td:last-child {
+    border-right-style: 		solid;
+    border-bottom-right-radius: 4px; 
+    border-top-right-radius: 4px; 
 }
 
 .vertical-center {
@@ -35,6 +51,65 @@ body{
   
 	display: 									flex;
 	align-items: 							center;
+}
+
+.vert {
+	position: 								fixed;
+	width: 										60px;
+	padding: 									100% 60px 100% 60px;
+	height: 									100vh;
+	font-size: 								20px;
+	color: 									#FFF;
+	background: 						#66BB6A;
+}
+.vert:after {
+	content: 									" ";
+	position: 								absolute;
+	display: 									block;
+	width: 										100%;
+	height: 									100vh;
+	top: 											0;
+	left: 										0;
+	z-index: 									-1;
+	background: 						#66BB6A;
+	transform-origin: 				bottom left;
+	-ms-transform: 						skew(-5deg, 0deg);
+	-webkit-transform: 				skew(-5deg, 0deg);
+	transform: 								skew(-5deg, 0deg);
+}
+
+.row{
+	width:										100%;
+}
+
+.cent-container{
+	text-align: 							center;
+	font-size:								1.2em;
+	width:										100%;
+	position: 								absolute;
+	display: 									table;
+}
+
+.front{
+	display:									table;
+	text-align:								center;
+	height:										100vh;
+	width:										100%;
+	position:									fixed;
+}
+
+.front span{
+	display:									table-cell;
+	vertical-align: 					middle;
+	height:										100vh;
+	width:										50vw;
+}
+
+.link{
+	padding:									4px 8px;
+	background-color:					#232323;
+	color:										#66BB6A;
+	border:										#66BB6A 2px solid;
 }
 
 /*UI ELEMENTS*/
@@ -84,73 +159,4 @@ ul{
 table{
 	margin-bottom:						10px;
 	border-collapse: 					separate;
-}
-
-.job_skills td {
-    border: 								solid 1px #343434;
-    border-style: 					solid none;
-	background-color: 			#343434;
-}
-.job_skills td:first-child {
-    border-left-style: 			solid;
-		border-top-left-radius: 4px; 
-    border-bottom-left-radius: 4px;
-}
-.job_skills td:last-child {
-    border-right-style: 		solid;
-    border-bottom-right-radius: 4px; 
-    border-top-right-radius: 4px; 
-}
-
-.vert {
-	position: 								relative;
-	width: 										60px;
-	padding: 									100% 60px 100% 60px;
-	height: 									100vh;
-	font-size: 								20px;
-	position: 								relative;
-	color: 									#FFF;
-	background: 						#66BB6A;
-}
-
-.vert:after {
-	content: 									" ";
-	position: 								absolute;
-	display: 									block;
-	width: 										100%;
-	height: 									100vh;
-	top: 											0;
-	left: 										0;
-	z-index: 									-1;
-	background: 						#66BB6A;
-	transform-origin: 				bottom left;
-	-ms-transform: 						skew(-5deg, 0deg);
-	-webkit-transform: 				skew(-5deg, 0deg);
-	transform: 								skew(-5deg, 0deg);
-}
-
-.row{
-	width:										100%;
-}
-
-.cent-container{
-	text-align: 							center;
-	font-size:								1.2em;
-	width:										100%;
-	position: 								absolute;
-	display: 									table;
-}
-
-.front{
-	display:									table;
-	text-align:center;
-	height:100vh;
-	width:50vw;
-}
-
-.front span{
-	display:table-cell;
-	vertical-align: middle;
-	height:100vh;
-	width:50vw;
 }

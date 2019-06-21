@@ -31,7 +31,7 @@
 
 <body class="main">
 	<div id="page-wrap">
-		<div class="vertical-center container-fluid">
+		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-5">
 					<div class="home_container hidden-lg hidden-md hidden-sm">
@@ -43,12 +43,12 @@
 				</div>
 				<div class="col-sm-2 hidden-xs">
 					<div class="home_container">
-						<div class="vert"></div>
+						<div class="vert" ></div>
 					</div>
 				</div>
 				<div id="information" class="col-sm-5">
 					
-						<div style="text-align:center;margin-top:20px;" ng-include src="'pages/tab.html'">
+						<div style="text-align:center;margin-top:20px;" id="tabs" ng-include src="'pages/tab.html'">
 						</div>
 						<br>
 					<div class="home_container hidden-lg hidden-md hidden-sm" ng-view></div>
