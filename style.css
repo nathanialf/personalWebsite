@@ -1,0 +1,97 @@
+body {
+  background-color: #bfbfbf;
+  font-size: 12pt;
+  font-family: 'Arial';
+  margin: 0;
+}
+
+.side a {
+  text-decoration: none;
+  color: black;
+}
+
+.corner {
+  font-family: 'Press Start 2P', cursive;
+  /* To move it to the center
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 150pt;
+  */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 8px;
+  border-radius:20px;
+  
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #66ff99 50%, #00ffff );
+  
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s;
+  transition: background-position 1s;
+}
+
+.corner:hover{
+  background-position: 0 100%;
+}
+
+.sidebar-item {
+  font-size: 12pt;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  font-size: 10pt;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+  .side {
+    padding-top: 0px;
+  }
+
+  .corner {
+    border-radius: 0px 0px 20px 20px;
+  }
+}
+
+.job_header {
+  cursor: pointer;
+}
+
+table {
+  font-size: 10pt;
+}
+
+.arrow {
+  font-size: 16pt;
+}

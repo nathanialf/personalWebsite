@@ -1,0 +1,77 @@
+<html ng-app="website">
+  <head>
+    <title>Nathanial Fine</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#66ff99" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="controllers/homeController.js"></script>
+    <script src="controllers/favesController.js"></script>
+    <script src="controllers/jobsController.js"></script>
+    <script src="controllers/personalController.js"></script>
+    <script src="controllers/ideasController.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="side">
+        <div class="corner">
+          <a href="mailto:nathanial+website@defnf.com">
+            <img src="DEFNF.png" width="80pt" title="Nathanial Fine" style="vertical-align:middle;"></img>
+          </a>
+          <a href="mailto:nathanial+website@defnf.com">
+            <div style="vertical-align:middle;padding-left: 10px;">
+              DEFNF<br>
+              <span style="font-size:6;">SysDev Eng</span><br>
+              <span style="font-size:6;">Amazon</span>
+            </div>
+          </a>
+        </div>
+        <hr>
+        <!--SIDE BAR ITEMS-->
+        <a href="#/">
+          <div class="sidebar-item">
+            //home
+          </div>
+        </a>
+        <a href="#/jobs">
+          <div class="sidebar-item">
+            //jobs
+          </div>
+        </a>
+        <a href="#/personal">
+          <div class="sidebar-item">
+            //projects
+          </div>
+        </a>
+        <hr>
+	        I am currently a Systems Development Engineer transitioning back into a Software Development Engineer at Amazon Web Services. 
+          My current career goal is to start developing and supporting video games. As I work toward this goal, I have been working in 
+          the GameTech Services at AWS where I am supporting the acquired company GameSparks as we shut it down and work towards releasing 
+          the new Amazon GameSparks.
+        <!-- 
+        <hr>
+        <a href="#/faves">
+          <div class="sidebar-item">
+            //favorite games/devs
+          </div>
+        </a>
+        <a href="#/ideas">
+          <div class="sidebar-item">
+            //ideas for things
+          </div>
+        </a>
+        -->
+      </div>
+      <div class="main">
+        <div ng-view></div>
+      </div>
+    </div>
+  </body>
+</html>
