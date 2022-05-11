@@ -4,3 +4,6 @@
 
 ### TODO
  - Come up with a better design for this website
+ - Allow links to specific entries in jobs and personal projects to link to the page with the respective item expanded
+ - Change some hyperlinks to buttons where applicable
+ - Add Keyword/tags to items in //jobs and //projects with applicable skills and tools

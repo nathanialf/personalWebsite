@@ -1,56 +1,186 @@
-<ul>
-    <li>Home Server
-        <ul>
-            <li>Running This!</li>
-            <li><a href="https://github.com/nathanialf/personalWebsite">Website Github Repo</a></li>
-        </ul>
-    </li>
-    <li>Random Projects
-        <ul>
-            <li><a href="https://github.com/nathanialf/cli-notes">CLI Notebook</a></li>
-            <li>Keyboard Build/Programming
-                <ul>
-                    <li>Hardware
-                        <ul>
-                            <li>// OLKB Preonic PCB with Frosted Acrylic case</li>
-                            <li>// DROP Holy Panda Linear Switches</li>
-                            <li>// KAT Drifter Keycaps</li>
-                        </ul>
-                    </li>
-                    <li><a href="https://github.com/nathanialf/qmk_firmware">QMK Profile</a></li>
-                </ul>
-            </li>
-            <li>Incomplete games
-                <ul>
-                    <li><a href="https://github.com/nathanialf/Point-And-Click">Point and Click Unity 3D Test</a></li>
-                    <li><a href="https://github.com/nathanialf/Astronaut-SDL">2D Multiplayer Space Arena thing</a>
-                        <ul>
-                            <li>// <a href="files/Astronaut.pdf">Small Brainstorming Doc</a></li>
-                            <li>// Abandoned. Recently added to github for posterity</li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="https://github.com/nathanialf/playdatebobble">Puzzle Bobble-like game for the PlayDate Console</a>
-                <ul>
-                    <li>// <a href="https://play.date">PlayDate Console</a></li>
-                    <li>// Feature complete, Additional changes that I may focus on at a slower pace</li>
-                    <li>// Currently In Progress</li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-    <li>Mom 101
-        <ul>
-            <li>iOS App to help educate new or soon-to-be parents</li>
-            <li>Created for a grant from Indiana State University Foundation</li>
-            <li>Can't seem to find it so it may be taken down at this point. I havent worked on it since college.</li>
-        </ul>
-    </li>
-    <li>Attendance Tracker
-        <ul>
-            <li>Attendance tracker for Project Management Course in college</li>
-        </ul>
-    </li>
-</ul>
+<div>
+    <div class="job_header" ng-click="server = !server" ng-init="server=true">
+        <table>
+            <tr>
+                <td>
+                    <div class="arrow" ng-show="!server">&darr;</div>
+                    <div class="arrow" ng-show="server">&uarr;</div>
+                </td>
+                <td>
+                    Home Server
+                    <div>2015-Current</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <ul ng-show="server">
+        <li>Running This!</li>
+        <li><a href="https://github.com/nathanialf/personalWebsite">Website Github Repo</a></li>
+        <li>
+            Samba Share on my home network for mass storage on all my devices
+            <ul>
+                <li>Backs-up contents of Samba share (excluding development workspace) to private S3 bucket every 6 hours</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<hr>
+<div>
+    <div class="job_header" ng-click="notebook = !notebook" ng-init="notebook=false">
+        <table>
+            <tr>
+                <td>
+                    <div class="arrow" ng-show="!notebook">&darr;</div>
+                    <div class="arrow" ng-show="notebook">&uarr;</div>
+                </td>
+                <td>
+                   CLI Notebook
+                   <div>2021</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <ul ng-show="notebook">
+        <li>Note-taking app built to work with my personal workflow when working on the Kinesis team at AWS</li>
+        <li><a href="https://github.com/nathanialf/cli-notes">Github</a></li>
+    </ul>
+</div>
+<hr>
+<div>
+    <div class="job_header" ng-click="keeb = !keeb" ng-init="keeb=false">
+        <table>
+            <tr>
+                <td>
+                    <div class="arrow" ng-show="!keeb">&darr;</div>
+                    <div class="arrow" ng-show="keeb">&uarr;</div>
+                </td>
+                <td>
+                    Keyboard Build/Programming
+                   <div>2020-2022</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <ul ng-show="keeb">
+        <h4>Current</h4>
+        <li>Hardware
+            <ul>
+                <li>// OLKB Preonic PCB with Frosted Acrylic case</li>
+                <li>// DROP Holy Panda Linear Switches</li>
+                <li>// KAT Drifter Keycaps</li>
+            </ul>
+        </li>
+        <li><a href="https://github.com/nathanialf/qmk_firmware">QMK Profile</a></li>
+        <h4>Previous</h4>
+        TODO:
+        <li>Add Previous Keeb</li>
+        <li>Add images of each keeb</li>
+    </ul>
+</div>
+<hr>
+<div>
+    <div class="job_header" ng-click="incomplete = !incomplete" ng-init="incomplete=false">
+        <table>
+            <tr>
+                <td>
+                    <div class="arrow" ng-show="!incomplete">&darr;</div>
+                    <div class="arrow" ng-show="incomplete">&uarr;</div>
+                </td>
+                <td>
+                    Incomplete Games/Projects
+                    <div>Since the dawn of time</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <ul ng-show="incomplete">
+        <li><a href="https://github.com/nathanialf/Point-And-Click">Point and Click Unity 3D Test</a></li>
+        <li><a href="https://github.com/nathanialf/Astronaut-SDL">2D Multiplayer Space Arena thing</a>
+            <ul>
+                <li>// <a href="files/Astronaut.pdf">Small Brainstorming Doc</a></li>
+                <li>// Abandoned. Recently added to github for posterity</li>
+            </ul>
+        </li>
+        <li>
+            API-As-A-Service
+            <ul>
+                <li>// <a href="https://github.com/nathanialf/aaas_frontend">Frontend</a> Built with AngularJS and Spring</li>
+                <li>// <a href="https://github.com/nathanialf/aaas_backend">Backend</a> Built with Dart and running Aqueduct</li>
+                <li>// Had test environment running in AWS EC2 and RDS for a time but it is shut down now</li>
+            </ul>
+        </li>
+        <li><a href="https://github.com/nathanialf/hexagon">Hexagon Thing</a>
+            <ul>
+                <li>// Initially started early in college to spend some free time</li>
+                <li>// Never had a game idea materialize</li>
+            </ul>
+        </li>
+        <li>Countless others from my youth. May update with some of them later</li>
+    </ul>
+</div>
+<hr>
+<div>
+    <div class="job_header" ng-click="playdatebobble = !playdatebobble" ng-init="playdatebobble=true">
+        <table>
+            <tr>
+                <td>
+                    <div class="arrow" ng-show="!playdatebobble">&darr;</div>
+                    <div class="arrow" ng-show="playdatebobble">&uarr;</div>
+                </td>
+                <td>
+                    Puzzle Bobble-like game for the PlayDate Console
+                    <div>2022</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <ul ng-show="playdatebobble">
+        <li>// <a href="https://play.date">PlayDate Console</a></li>
+        <li>// Feature complete, Additional changes that I may focus on at a slower pace</li>
+        <li>// Learning Lua with this project so plans are already made to refactor older pieces that I know can be made better</li>
+        <li>// Currently In Progress</li>
+    </ul>
+</div>
+<hr>
+<div>
+    <div class="job_header" ng-click="mom = !mom" ng-init="mom=false">
+        <table>
+            <tr>
+                <td>
+                    <div class="arrow" ng-show="!mom">&darr;</div>
+                    <div class="arrow" ng-show="mom">&uarr;</div>
+                </td>
+                <td>
+                    Mom 101
+                    <div>2016-2017</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <ul ng-show="mom">
+        <li>iOS App to help educate new or soon-to-be parents</li>
+        <li>Created for a grant from Indiana State University Foundation</li>
+        <li>Can't seem to find it so it may be taken down at this point. I havent worked on it since college.</li>
+    </ul>
+</div>
+<hr>
+<div>
+    <div class="job_header" ng-click="attendance = !attendance" ng-init="attendance=false">
+        <table>
+            <tr>
+                <td>
+                    <div class="arrow" ng-show="!attendance">&darr;</div>
+                    <div class="arrow" ng-show="attendance">&uarr;</div>
+                </td>
+                <td>
+                    Attendance Tracker
+                    <div>2017</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <ul ng-show="attendance">
+        <li>Attendance tracker for Project Management Course in college</li>
+    </ul>
+</div>
+<hr>
