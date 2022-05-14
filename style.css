@@ -95,3 +95,7 @@ table {
 .arrow {
   font-size: 16pt;
 }
+
+.slash {
+  list-style: none;
+}
