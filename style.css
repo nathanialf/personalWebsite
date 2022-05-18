@@ -1,5 +1,5 @@
 body {
-  background-color: #bfbfbf;
+  background-color:   #60be83;
   font-size: 12pt;
   font-family: 'Arial';
   margin: 0;
@@ -28,17 +28,20 @@ body {
   padding: 8px;
   border-radius:20px;
  
+  /*
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, #66ff99 50%, #00ffff );
+  background-image: linear-gradient(to bottom, #60be83 50%, #66ff99 );
+  */
   
   /*
   background-image: url(DiscordBanner.png);
   background-repeat: no-repeat;
   max-width: 600;
   */
-  -webkit-transition: background-position 1s;
+  
+  /*-webkit-transition: background-position 1s;
   -moz-transition: background-position 1s;
-  transition: background-position 1s;
+  transition: background-position 1s;*/
 }
 
 .corner:hover{
@@ -46,7 +49,17 @@ body {
 }
 
 .sidebar-item {
-  font-size: 12pt;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 7pt;
+  margin-top: 10px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 24px;
+  display:inline-block;
+  
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
 }
 
 * {
@@ -62,17 +75,22 @@ body {
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  flex: 30%;
-  background-color: #f1f1f1;
+  flex: 20%;
+  /*background-color:   #60be83;*/
   padding: 20px;
 }
 
 /* Main column */
 .main {
-  flex: 70%;
+  flex: 80%;
   background-color: white;
   padding: 20px;
   font-size: 10pt;
+  border-radius: 12px;
+  
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
@@ -103,4 +121,14 @@ table {
 
 .slash {
   list-style: none;
+}
+
+.card {
+  background-color: white;
+  padding: 12px;
+  border-radius: 12px;
+  
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
 }
