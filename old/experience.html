@@ -1,0 +1,181 @@
+<html>
+  <head>
+
+    <title>Nathanial Fine</title>
+    <!--<meta name="theme-color" content="#66BB6A">-->
+    <meta name="theme-color" content="#000">
+    <link href="https://fonts.googleapis.com/css?family=Magra:400,700" rel="stylesheet">
+    <link rel="icon" type="image/png" href="NF2016.png">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+
+  <style>
+    @media screen and (max-width:767px)
+    {
+      table tr > *
+      {
+        display: block;
+      }
+      table tr
+      {
+        display: table-cell;
+      }
+
+      #main_container td
+      {
+        width:100%;
+      }
+
+      #main_left
+      {
+        //background-color:white;
+        border-right-style: none;
+        border-bottom: solid #66BB6A;
+      }
+      
+      table
+      {
+        text-align:center;
+      }
+
+      .label
+      {
+        margin:5px;
+      }
+
+      #main_container
+      {
+        width:10%;
+        height:100%;
+      }
+    }
+
+    @media screen and (min-width: 768px)
+    {
+      #main_container td
+      {
+        width:50%;
+      }
+
+      #main_right
+      {
+        text-align:left;
+      }
+
+      #main_left
+      {
+        text-align:center;
+        border-bottom-style:none;
+        border-right: solid #66BB6A;
+      }
+
+      .label
+      {
+        margin:5px 5px 5px 25px;
+      }
+
+      #main_container
+      {
+        width: 60%;
+        height: 60%;
+      }
+    }
+
+    body
+    {
+      background-color:#333;
+      background: -webkit-radial-gradient(#333, #000); /* Safari 5.1 to 6.0 */
+      background: -o-radial-gradient(#333, #000); /* For Opera 11.6 to 12.0 */
+      background: -moz-radial-gradient(#333, #000); /* For Firefox 3.6 to 15 */
+      background: radial-gradient(#333, #000); /* Standard syntax */
+      color:#66BB6A;
+      font-family: 'Magra', sans-serif;
+    }
+
+    #main_container
+    {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    #main_left
+    {
+      font-size:28px;
+      font-weight:700;
+    }
+
+    #subtitle
+    {
+      font-weight:400;
+      font-size:12px;
+      margin-bottom: 5px;
+    }
+
+    .label
+    {
+      padding:5px;
+      cursor:pointer;
+    }
+
+    .exp
+    {
+      color:grey;
+      font-size:12px;
+      padding-bottom:5px;
+    }
+
+  </style>
+
+
+  <body>
+    <table id="main_container">
+      <tr>
+	<td id="main_left">
+	  <img src="NF2016.png" width="50px" onclick="window.open('index.html', '_self');">
+	  <br>
+	  <br>
+	  NATHANIAL FINE
+	  <div id="subtitle">
+	    Indiana State University
+	  </div>
+	</td>
+	<td id="main_right">
+	  <div class="label">Internships</div>
+          <div class="label exp">Junior Programmer / Analyst Intern
+            <div style="">Indiana Department of Transportation</div>
+            <div style="">August 2016</div>
+          </div>
+	  <div class="label exp">Technician Intern
+            <div style="">MSD of Lawrence Township</div>
+            <div style="">August 2013</div>
+          </div>
+
+	  <div class="label">Jobs</div>
+	  <div class="label exp">Academic Programming Support Lead
+            <div style="">Indiana State University</div>
+            <div style="">Currently Employed</div>
+          </div>
+          <div class="label exp">Supplemental Instruction (SI) Leader
+            <div style="">Indiana State University</div>
+            <div style="">December 2016</div>
+          </div>
+          <div class="label exp">Technical Specialist / Web Developer
+            <div style="">Indiana State University</div>
+            <div style="">August 2015</div>
+          </div>
+          
+	  <div class="label">Contracts</div>
+          <div class="label exp">Lead iOS Developer
+            <div style="">Indiana State University</div>
+          </div>
+          <div class="label exp">Lead Android Developer
+            <div style="">Indiana State University</div>
+          </div>
+	</td>
+      </tr>
+    </table>
+  </body>
+</html>

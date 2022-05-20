@@ -1,212 +1,46 @@
-<h1>
-    Personal Projects
-</h1>
-<hr>
-<div>
-    <div class="job_header" ng-click="server = !server" ng-init="server=true">
-        <table>
-            <tr>
-                <td>
-                    <div class="arrow" ng-show="!server">&darr;</div>
-                    <div class="arrow" ng-show="server">&uarr;</div>
-                </td>
-                <td>
-                    Home Server
-                    <div>2015-Current</div>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <ul ng-show="server" class="slash">
-        <li>// Running the development version of this website (Production is on AWS Amplify)</li>
-        <li>// <a href="https://github.com/nathanialf/personalWebsite">Website Github Repo</a></li>
-        <li>
-            // Samba Share on my home network for mass storage on all my devices
-            <ul class="slash">
-                <li>// Backs-up contents of Samba share (excluding development workspace) to private AWS S3 bucket every
-                    6
-                    hours</li>
-            </ul>
-        </li>
-        <li>
-            // All development of personal projects are done on this server
-            <ul class="slash">
-                <li>// Consistency across devices because they all remote in</li>
-                <li>// VS Code with Remote SSH extension as IDE-lite experience</li>
-            </ul>
-        </li>
-        <h4>Hardware</h4>
-        <li>// CPU: Intel Core i7-7700</li>
-        <li>// GPU: GeForce GTX 1070</li>
-        <li>// Memory: 16GB DDR3</li>
-        <li>// Storage: 400GB SSD for root // 4TB HDD for SMB</li>
-    </ul>
+Personal Projects
+<div class="job_page">
+    Home lab environment
+    <br>
+    <div class="job_info">
+        <table width="100%">
+            <tr>
+                <td class="job_title">
+                    <td class="job_title" style="text-align:center">March 2015 - Current
+                        <tr class="job_skills">
+                            <td>
+                                Linux<br> Windows Server<br> Automation Development
+                                <td>
+                                    Networking<br> System Administration<br> Virtual Machines
+                        </tr>
+        </table>
+        <ul>
+            <li>Servers running at my apartment to run services for a more efficient lifestyle</li>
+            <li>Virtual Host with a samba share that all machines connect to for mass storage (12TB)</li>
+            <li>Virtual machines that run appliances to manage local network, run a VPN, and stream content</li>
+            <li>Develop scripts and web tools to improve user experience and to allow family members to easily interact
+                with the services running</li>
+        </ul>
+    </div>
+    <br>Attendance Tracker for Indiana State University
+    <br>
+    <div class="job_info">
+        <table width="100%">
+            <tr>
+                <td class="job_title">Project Manager
+                    <td class="job_title" style="text-align:center">March 2017 - May 2017
+                        <tr class="job_skills">
+                            <td>
+                                Linux<br> Raspberry Pi<br> PHP
+                                <td>
+                                    MySQL<br> Project Management
+                        </tr>
+        </table>
+        <ul>
+            <li>Work with fellow students to build a self-contained unit to wall-mount a Raspberry Pi with an attached USB Card Reader and small display
+            <li>Develop application to store attendance of each student entering and leaving the classroom
+            <li>Develop a portal for faculty members to review attendance, grade them on attendance, and export grade data
+        </ul>
+    </div>
+    <br>
 </div>
-<hr>
-<div>
-    <div class="job_header" ng-click="notebook = !notebook" ng-init="notebook=false">
-        <table>
-            <tr>
-                <td>
-                    <div class="arrow" ng-show="!notebook">&darr;</div>
-                    <div class="arrow" ng-show="notebook">&uarr;</div>
-                </td>
-                <td>
-                    CLI Notebook
-                    <div>2021</div>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <ul ng-show="notebook" class="slash">
-        <li>// Note-taking app built to work with my personal workflow when working on the Kinesis team at AWS</li>
-        <li>// <a href="https://github.com/nathanialf/cli-notes">Github</a></li>
-    </ul>
-</div>
-<hr>
-<div>
-    <div class="job_header" ng-click="keeb = !keeb" ng-init="keeb=false">
-        <table>
-            <tr>
-                <td>
-                    <div class="arrow" ng-show="!keeb">&darr;</div>
-                    <div class="arrow" ng-show="keeb">&uarr;</div>
-                </td>
-                <td>
-                    Keyboard Build/Programming
-                    <div>2020-2022</div>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <ul ng-show="keeb" class="slash">
-        <h4>Current</h4>
-        When I started getting into building a mechanical keyboard I found some keycaps from Hyper Light Drifter (one of
-        my favorite video games) but the group buy was long over. Eventually I found a set on ebay that was probably not
-        worth the price I paid but I then built the keyboard and programmed the profile in qmk to fit the theme.<br><br>
-        <li>// Hardware
-            <ul class="slash">
-                <li>// OLKB Preonic PCB with Frosted Acrylic case</li>
-                <li>// DROP Holy Panda Linear Switches</li>
-                <li>// KAT Drifter Keycaps</li>
-            </ul>
-        </li>
-        <li>// <a href="https://github.com/nathanialf/qmk_firmware">QMK Profile</a></li>
-        <h4>Previous</h4>
-        My goal for this keyboard was to try to replicate the look of the touchscreen desk keyboard in TRON
-        but didn't translate perfectly and was further hurt in its appearance by the switch to the plastic case
-        after shocking two PCBs<br><br>
-        <li>// GK64 PCB</li>
-        <li>// KBDFans Plastic Case (Aluminum case kept getting shocked and killed the PCB)</li>
-        <li>// Red Alphas and Yellow Mods keycaps from pimpmykeyboard</li>
-        <li>// DROP Holy Panda Linear Switches</li>
-        <h4>TODO:</h4>
-        <li>Add images of each keeb</li>
-    </ul>
-</div>
-<hr>
-<div>
-    <div class="job_header" ng-click="incomplete = !incomplete" ng-init="incomplete=false">
-        <table>
-            <tr>
-                <td>
-                    <div class="arrow" ng-show="!incomplete">&darr;</div>
-                    <div class="arrow" ng-show="incomplete">&uarr;</div>
-                </td>
-                <td>
-                    Incomplete Games/Projects
-                    <div>Since the dawn of time</div>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <ul ng-show="incomplete" class="slash">
-        <h4><a href="https://github.com/nathanialf/Point-And-Click">Point and Click Unity 3D Test</a></h4>
-        <li>// Very simple interactions with objects were able to work</li>
-        <li>// 2.5D. Done in Unity 3D in a 3D space with nav mesh, Camera fixed and interacted with like a 2D
-            point and click game</li>
-        <h4><a href="https://github.com/nathanialf/Astronaut-SDL">2D Multiplayer Space Arena thing</a></h4>
-        <li>// <a href="files/Astronaut.pdf">Small Brainstorming Doc</a></li>
-        <li>// Abandoned. Recently added to github for posterity</li>
-        <h4>API-As-A-Service</h4>
-        <li>// A web app you would plug in connection information for a SQL/Relational Database and specify the
-            schema and it would serve an API for Operations to the DB</li>
-        <li>// <a href="https://github.com/nathanialf/aaas_frontend">Frontend</a> Built with AngularJS</li>
-        <li>// <a href="https://github.com/nathanialf/aaas_backend">Backend</a> Built with Dart and running
-            Aqueduct</li>
-        <li>// Had test environment running in AWS EC2 and RDS for a time but it is shut down now</li>
-        <h4><a href="https://github.com/nathanialf/hexagon">Hexagon Thing</a></h4>
-        <li>// Initially started early in college to spend some free time</li>
-        <li>// Never had a game idea materialize</li>
-        <br>
-        <li>Countless others from my youth. May update with some of them later</li>
-    </ul>
-</div>
-<hr>
-<div>
-    <div class="job_header" ng-click="playdatebobble = !playdatebobble" ng-init="playdatebobble=true">
-        <table>
-            <tr>
-                <td>
-                    <div class="arrow" ng-show="!playdatebobble">&darr;</div>
-                    <div class="arrow" ng-show="playdatebobble">&uarr;</div>
-                </td>
-                <td>
-                    Puzzle Bobble-like game for the PlayDate Console
-                    <div>2022</div>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <ul ng-show="playdatebobble" class="slash">
-        <li>// <a href="https://play.date">PlayDate Console</a></li>
-        <li>// <a href="https://github.com/nathanialf/playdatebobble">Github Repo</a></li>
-        <li>// Feature complete, Additional changes that I may focus on at a slower pace</li>
-        <li>// Learning Lua with this project so plans are already made to refactor older pieces that I know can be made
-            better (see <a href="https://github.com/nathanialf/playdatebobble/tree/refactor">refactor branch</a>)</li>
-        <li>// On Hold. Working out how I want to develop a map editor to make filling out the content easier</li>
-    </ul>
-</div>
-<hr>
-<div>
-    <div class="job_header" ng-click="mom = !mom" ng-init="mom=false">
-        <table>
-            <tr>
-                <td>
-                    <div class="arrow" ng-show="!mom">&darr;</div>
-                    <div class="arrow" ng-show="mom">&uarr;</div>
-                </td>
-                <td>
-                    Mom 101
-                    <div>2016-2017</div>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <ul ng-show="mom" class="slash">
-        <li>// iOS App to help educate new or soon-to-be parents</li>
-        <li>// Created for a grant from Indiana State University Foundation</li>
-        <li>// Can't seem to find it so it may be taken down at this point. I havent worked on it since college.</li>
-    </ul>
-</div>
-<hr>
-<div>
-    <div class="job_header" ng-click="attendance = !attendance" ng-init="attendance=false">
-        <table>
-            <tr>
-                <td>
-                    <div class="arrow" ng-show="!attendance">&darr;</div>
-                    <div class="arrow" ng-show="attendance">&uarr;</div>
-                </td>
-                <td>
-                    Attendance Tracker
-                    <div>2017</div>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <ul ng-show="attendance" class="slash">
-        <li>// Attendance tracker for Project Management Course in college</li>
-    </ul>
-</div>
-<hr>

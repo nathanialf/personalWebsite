@@ -1,4 +1,4 @@
-app.controller('personalController', function($scope, $rootScope, $location, $http)
-{
-    
+app.controller('personalController', function($scope, $rootScope, $location, $http)
+{
+    
 });

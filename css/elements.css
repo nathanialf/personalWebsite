@@ -1,0 +1,165 @@
+body{
+	background-color: 			#232323;
+	color:									#66BB6A;
+}
+
+/*IDS*/
+#front{
+	font-size: 24spx;
+}
+
+
+/*CLASSES*/
+.home_container{
+	text-align: 							center;
+	font-size:								1.2em;
+}
+.job_page{
+	text-align:								left;
+}
+
+.job_title{
+	font-size:								16px;
+	width:										50%;
+}
+
+.job_info{
+	text-align:								left;
+	color:									lightgray;
+	font-size:								14px;
+}
+
+.job_skills{
+	text-align:								center;
+}
+.job_skills td {
+    border: 								solid 1px #343434;
+    border-style: 					solid none;
+	background-color: 			#343434;
+}
+.job_skills td:first-child {
+    border-left-style: 			solid;
+		border-top-left-radius: 4px; 
+    border-bottom-left-radius: 4px;
+}
+.job_skills td:last-child {
+    border-right-style: 		solid;
+    border-bottom-right-radius: 4px; 
+    border-top-right-radius: 4px; 
+}
+
+.vertical-center {
+	min-height: 							100%;  /* Fallback for browsers do NOT support vh unit */
+	min-height: 							100vh; /* These two lines are counted as one :-)       */
+  
+	display: 									flex;
+	align-items: 							center;
+}
+
+.vert {
+	position: 								fixed;
+	width: 										60px;
+	padding: 									100% 60px 100% 60px;
+	height: 									100vh;
+	font-size: 								20px;
+	color: 									#FFF;
+	background: 						#66BB6A;
+}
+.vert:after {
+	content: 									" ";
+	position: 								absolute;
+	display: 									block;
+	width: 										100%;
+	height: 									100vh;
+	top: 											0;
+	left: 										0;
+	z-index: 									-1;
+	background: 						#66BB6A;
+	transform-origin: 				bottom left;
+	-ms-transform: 						skew(-5deg, 0deg);
+	-webkit-transform: 				skew(-5deg, 0deg);
+	transform: 								skew(-5deg, 0deg);
+}
+
+.row{
+	width:										100%;
+}
+
+.cent-container{
+	text-align: 							center;
+	font-size:								1.2em;
+	width:										100%;
+	position: 								absolute;
+	display: 									table;
+}
+
+.front{
+	display:									table;
+	text-align:								center;
+	height:										100vh;
+	width:										100%;
+	position:									fixed;
+}
+
+.front span{
+	display:									table-cell;
+	vertical-align: 					middle;
+	height:										100vh;
+	width:										50vw;
+}
+
+.link{
+	padding:									4px 8px;
+	background-color:					#232323;
+	color:										#66BB6A;
+	border:										#66BB6A 2px solid;
+}
+
+/*UI ELEMENTS*/
+button{
+	border-style: 						none;
+	border-radius:						100px;
+	padding:									8px 12px;
+	background:								var(--aqua-gradient-inverted);
+	color:									black;
+}
+
+input{
+	border-style:							none none solid none;
+	border-width:							2px;
+	border-color:							var(--aqua-dark);
+}
+
+a{
+	text-decoration: 					none;
+	padding:									10px 20px;
+	margin:										none;
+	background-color:					#66BB6A;
+	color:										#232323;
+	display:									inline-block;
+	border-radius:						8px;
+	border:										#232323 2px solid;
+
+	-webkit-transition: 			background-color .15s linear, color .15s linear;
+	-ms-transition: 					background-color .15s linear, color .15s linear;
+	transition:				 				background-color .15s linear, color .15s linear;
+}
+
+a:hover{
+	color: 										#66BB6A;
+	background-color:					#232323;
+	text-decoration: 					none;
+
+  -webkit-transition: 			background-color .15s linear, color .15s linear;
+  -ms-transition: 					background-color .15s linear, color .15s linear;
+  transition: 							background-color .15s linear, color .15s linear;
+}
+
+ul{
+	margin-bottom:						0px;
+}
+
+table{
+	margin-bottom:						10px;
+	border-collapse: 					separate;
+}

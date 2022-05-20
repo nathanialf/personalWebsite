@@ -1,78 +1,62 @@
-<html ng-app="website">
-  <head>
-    <title>Nathanial Fine</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <meta name="theme-color" content="#60be83" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-
-    <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
-
-    <script src="js/app.js"></script>
-    <script src="controllers/homeController.js"></script>
-    <script src="controllers/favesController.js"></script>
-    <script src="controllers/jobsController.js"></script>
-    <script src="controllers/personalController.js"></script>
-    <script src="controllers/ideasController.js"></script>
-
-    
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="row">
-      <div class="side">
-        <div class="corner">
-          <a href="mailto:nathanial+website@defnf.com">
-            <img src="DEFNF2022.png" width="80pt" title="Nathanial Fine" style="vertical-align:middle;"></img>
-          </a>
-          <a href="mailto:nathanial+website@defnf.com">
-            <div style="vertical-align:middle;padding-left: 10px;">
-              DEFNF<br>
-              <span style="font-size:8;">SysDev Eng</span><br>
-              <span style="font-size:8;">Amazon</span>
-            </div>
-          </a>
-        </div>
-        <!--SIDE BAR ITEMS-->
-        <a href="#/">
-          <div class="sidebar-item">
-            //HOME
-          </div>
-        </a><br>
-        <a href="#/jobs">
-          <div class="sidebar-item">
-            //JOBS
-          </div>
-        </a><br>
-        <a href="#/personal">
-          <div class="sidebar-item">
-            //PROJECTS
-          </div>
-        </a><br><br>
-        <!-- 
-        <hr>
-        <a href="#/faves">
-          <div class="sidebar-item">
-            //favorite games/devs
-          </div>
-        </a>
-        <a href="#/ideas">
-          <div class="sidebar-item">
-            //ideas for things
-          </div>
-        </a>
-        -->
-      </div>
-      <div class="main">
-        <div ng-view></div>
-      </div>
-    </div>
-  </body>
+<!DOCTYPE html>
+<html ng-app="personal">
+
+<head>
+	<title>Nathanial Fine</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#333" />
+
+	<!-- Download Bootstrap -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- Import our angular! -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+
+	<script src="js/app.js"></script>
+	<script src="controllers/expController.js"></script>
+
+	<link rel="stylesheet" href="css/elements.css">
+	<link rel="shortcut icon" href="img/NF2016.png" type="image/x-icon" />
+
+</head>
+
+<body class="main">
+	<div id="page-wrap">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-5">
+					<div class="home_container hidden-lg hidden-md hidden-sm">
+						<div ng-include src="'pages/front.html'"></div>
+					</div>
+					<div class="cent-container hidden-xs front">
+						<div ng-include src="'pages/front.html'"></div>
+					</div>
+				</div>
+				<div class="col-sm-2 hidden-xs">
+					<div class="home_container">
+						<div class="vert" ></div>
+					</div>
+				</div>
+				<div id="information" class="col-sm-5">
+					
+						<div style="text-align:center;margin-top:20px;" id="tabs" ng-include src="'pages/tab.html'">
+						</div>
+						<br>
+					<div class="home_container hidden-lg hidden-md hidden-sm" ng-view></div>
+					<div class="cent-container hidden-xs" ng-view></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
 </html>
